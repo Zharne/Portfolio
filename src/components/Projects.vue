@@ -1,23 +1,20 @@
 <template>
     <div id='projects'>
-  			<div class="container" v-if="projects.length">
-  				<div v-for = "project in projects" :key="project.id" class="project">
-					  <div class="card">
-						  <div class="card-image">
-							  <img src="project.img" alt="">
-						  </div>
-						  <div class="card-content">
-							  <h3>{{project.title}}</h3>
-							  <p>{{project.details}}</p>
-						  </div>
-						  <button class="custom-btn btn-9">Github</button><br>
-						   <button class="custom-btn btn-9">Netlify</button>
-					  </div>
-    			</div>
-  			</div>
-  			<!-- <div v-else>
-    			<p>Loading projects...</p>
-  			</div> -->
+  		<div class="container" v-if="projects.length">
+  			<div v-for = "project in projects" :key="project.id" class="project">
+					<div class="card">
+						<div class="card-image">
+							<img src="project.img" alt="">
+						</div>
+						<div class="card-content">
+							<h3>{{project.title}}</h3>
+							<p>{{project.details}}</p>
+						</div>
+						<button class="custom-btn btn-9">Github</button><br>
+						<button class="custom-btn btn-9">Netlify</button>
+					</div>
+    		</div>
+  		</div>
     </div>
 </template>
 
