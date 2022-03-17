@@ -115,7 +115,7 @@
   height: 100%;
   /* background-color:darkgray; */
   width: 70%;
-  margin-left: 15%;
+  margin-left: 20%;
   margin-bottom: 5%;
 }
 /* .form-container{
@@ -128,7 +128,7 @@
 .section-header {
  
   text-align: center;
-  margin: 0 auto;
+  margin-left:10%;
   padding: 40px 0;
   font: 300 60px 'Oswald', sans-serif;
   color: black;

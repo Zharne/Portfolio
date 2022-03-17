@@ -7,7 +7,9 @@
     <Projects/>
     <Testimonials/>
     <Contact/>
+    <Footer/>
    </main>
+    
 </template>
 
 <script>
@@ -19,12 +21,13 @@ import Projects from './components/Projects.vue'
 import Navbar from './components/Navbar.vue'
 import Contact from './components/Contact.vue'
 import Testimonials from './components/Testimonials.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
   Home, About, Projects, Navbar,Resume,
-    Contact, Testimonials,
+    Contact, Testimonials, Footer
   }
 }
 

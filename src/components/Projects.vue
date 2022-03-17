@@ -4,11 +4,12 @@
   			<div v-for = "project in projects" :key="project.id" class="project">
 					<div class="card">
 						<div class="card-image">
-							<img src="project.img" alt="">
+							<img src="{{projects.img}}" alt="">
 						</div>
 						<div class="card-content">
-							<h3>{{project.title}}</h3>
+							<h3>{{projects.title}}</h3>
 							<p>{{project.details}}</p>
+							
 						</div>
 						<button class="custom-btn btn-9">Github</button><br>
 						<button class="custom-btn btn-9">Netlify</button>
@@ -26,7 +27,7 @@ export default {
     }
   },
   mounted() {
-    fetch('http://localhost:5000/projects')
+    fetch('https://zharneportfolio.herokuapp.com/projects')
       .then(res => res.json())
       .then(data => this.projects = data)
       .catch(err => console.log(err.message))

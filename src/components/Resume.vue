@@ -1,89 +1,61 @@
 <template>
   <div id='resume'>
-      <!-- <div class="main-container">
-      <div class="row">
-        <div class="col">
-          <h1 class="blue-text lighten-1 header">RESUME</h1>
-          <hr style="">
-          <ul class="timeline">
-            <li class="event" data-date="2015">
-              <h3>National Senior Certificate(NSC)</h3>
-              <h5>Oude Molen Technical High School</h5>
-              <p>
-                Afrikaans, English, Life Science, Mathematics, Life Orientation, Mechanical Technology, Business Studies.
-              </p>
-            </li>
-            <li class="event" data-date="2016">
-              <h3>Internship</h3>
-              <h5>Martin & East Pty(Ltd)</h5>
-              <p>
-                I completed a 1 year interneshhip as a workshop trainee.
-              </p>
-              <p>Since graduating from university, I have also undertaken responsibilities for designing a product for the company. The roles I have been given have provided the perfect opportunity to implement the skills I have gained throughout my higher
-                education, as well as experiencing the running of a successful business.</p>
-            </li>
-            <li class="event" data-date="2017">
-              <h3>N1-N3 Engineering Welding</h3>
-              <h5>False Bay TVET College</h5>
-              <p>My Nated 3 diploma is incomplete.
-              </p>
-            </li>
-            <li class="event" data-date="2018-2020">
-              <h3>Bachelors of Commerce(Gen)</h3>
-              <h5>Pearson Institute of Higher Learning</h5>
-              <p>I completed my degree </p>
-            </li>
-            <li class="event" data-date="2021/Present">
-              <h3>Coding</h3>
-              <h5>Life Choices Coding Academy</h5>
-              <p>This is where my interest in building things for interactive media began. During my first computing course I studied a range of core topics including multimedia design, database design, computer games development, computer networks and object
-                oriented programming.</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div> -->
     <div class="container">
     <div class="row">
         <div class="col-md-12">
             <div class="main-timeline">
                 <div class="timeline">
                     <a href="#" class="timeline-content">
-                        <div class="timeline-year">2022</div>
+                        <div class="timeline-year">2015</div>
                         <div class="timeline-icon"><i class="fa fa-globe"></i></div>
-                        <h3 class="title">Web Designing</h3>
+                        <h3 class="title">National Senior Certificate(Matric)</h3>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                          <h5>Oude Molen Technical High School</h5>
+                          Afrikaans, English, Life Science, Mathematics, Life Orientation, Mechanical Technology, Business Studies.
                         </p>
                     </a>
                 </div>
                 <div class="timeline">
                     <a href="#" class="timeline-content">
-                        <div class="timeline-year">2021</div>
+                        <div class="timeline-year">2016</div>
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                        <h3 class="title">Web Development</h3>
+                        <h3 class="title">Internship</h3>
+                        <p class="description">  
+                          <h5>Martin & East Pty(Ltd)</h5>
+                           I completed a 1 year internship as a workshop trainee and an aspiring mechanical engineer. 
+                        </p>               
+                    </a>
+                </div>
+                <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <div class="timeline-year">2017</div>
+                        <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                        <h3 class="title">N1-N3 Engineering Welding</h3>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                            <h5>False Bay TVET College</h5>
+                            I did not complete my Nated 3 diploma because I decided to do my BCom degree the following year.
                         </p>
                     </a>
                 </div>
                 <div class="timeline">
                     <a href="#" class="timeline-content">
-                        <div class="timeline-year">2021</div>
+                        <div class="timeline-year">2018-2020</div>
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                        <h3 class="title">Web Development</h3>
+                        <h3 class="title">Bachelors of Commerce(Gen)</h3>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                            <h5>Pearson Institute of Higher Learning</h5>
+                              I completed my degree 
                         </p>
                     </a>
                 </div>
-                <div class="timeline">
+                  <div class="timeline">
                     <a href="#" class="timeline-content">
-                        <div class="timeline-year">2021</div>
+                        <div class="timeline-year">2021-2022</div>
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                        <h3 class="title">Web Development</h3>
+                        <h3 class="title">Web development</h3>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                            <h5>Life Choices Coding Academy</h5>
+                              I am currently completing my coding course at Life Choices. 
                         </p>
                     </a>
                 </div>
@@ -100,7 +72,7 @@
 
 <style scoped>
 #resume{
-  height: 160vh;
+  height: 200vh;
   background-color:  #111;
   margin-left: 250px;
   width: 80%;
