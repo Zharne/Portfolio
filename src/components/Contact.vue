@@ -32,46 +32,8 @@
       </button>
       
     </form>
-
-  <!-- <p>{{name}}</p> -->
-    
-  <!-- Left contact page --> 
-    
-      <div class="direct-contact-container">
-<!-- 
-        <ul class="contact-list">
-          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Cape Town</span></i></li>
-          
-          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:068-427-0352" title="Give me a call">068-427-0352</a></span></i></li>
-          
-          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">zharnedesember@gmail.com</a></span></i></li>
-          
-        </ul> -->
-
-        <!-- <hr>
-        <ul class="social-media-list">
-          <li><a href="#" target="_blank" class="contact-icon">
-             <i class="fa fa-github" aria-hidden="true"></i></a>
-            <i class="fab fa-github"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-codepen" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-twitter" aria-hidden="true"></i></a> 
-            <i class="fab fa-linkedin"></i>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-instagram" aria-hidden="true"></i></a>
-          </li>       
-        </ul>
-        <hr> -->
-
-        <!-- <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div> -->
-
       </div>
   </div>  
-  </div>
 </template>
 
 <script>
@@ -109,24 +71,15 @@
 
 <style scoped>
 #contact{
-  /* min-height: 80vh; */
   display: flex;
   justify-content: center;
   height: 100%;
-  /* background-color:darkgray; */
   width: 70%;
   margin-left: 20%;
   margin-bottom: 5%;
 }
-/* .form-container{
-    background-color: #e8ddbf;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    padding: 60px 100px 100px;
-    border-radius: 50%;
-} */
+
 .section-header {
- 
   text-align: center;
   margin-left:10%;
   padding: 40px 0;
@@ -145,7 +98,6 @@
   padding: 20px;
   position: relative;
   max-width: 840px;
-  
 }
 
 /* Left contact page */
@@ -235,86 +187,22 @@ textarea {
   text-decoration: none;
 }
 
-
-/* Social Media Icons */
-.social-media-list {
-  position: relative;
-  font-size: 22px;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.social-media-list li a {
-  color: #fff;
-}
-
-.social-media-list li {
-  position: relative; 
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  margin: 10px 3px;
-  line-height: 60px;
-  border-radius: 50%;
-  color: #fff;
-  background-color: rgb(27,27,27);
-  cursor: pointer; 
-  transition: all .2s ease-in-out;
-}
-
-.social-media-list li:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  border-radius: 50%;
-  opacity: 0;
-  box-shadow: 0 0 0 1px #fff;
-  transition: all .2s ease-in-out;
-}
-
-.social-media-list li:hover {
-  background-color: #fff; 
-}
-
-.social-media-list li:hover:after {
-  opacity: 1;  
-  transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-}
-
-.social-media-list li:hover a {
-  color: #000;
-}
-
-.copyright {
-  font: 200 14px 'Oswald', sans-serif;
-  color: #555;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
-hr {
-  border-color: rgba(255,255,255,.6);
-}
-
 /* Begin Media Queries*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 880px) {
+  .h1{
+    margin-top: 50vh;
+  }
   .contact-wrapper {
     display: flex;
     flex-direction: column;
+    margin-top: 50vh;
   }
   .direct-contact-container, .form-horizontal {
     margin: 0 auto;
   }  
   
   .direct-contact-container {
-    margin-top: 60px;
+    margin-top: 120px;
     max-width: 300px;
   }    
   .social-media-list li {

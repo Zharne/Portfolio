@@ -1,4 +1,5 @@
 <template>
+<div id="home">
     <div class="container"><br><br><br><br>
         <div class='img-box'>
             <img src="https://i.postimg.cc/Gp5rLhQK/me-shot-min.jpg" style="border-radius:50%">
@@ -13,19 +14,23 @@
         <div class="socials">
             <ul>
                 <li>
-                    <a href="#">
-                    <i class="fab fa-facebook-f icon"></i>    </a>
+                <a href="https://codepen.io/your-work/?search_term=&cursor=ZD0xJm89MCZwPTEmdj01NzcxMjU1MQ==" target="_blank" class="contact-icon">
+                <i class="fab fa-codepen" aria-hidden="true"></i></a>
+          
                 </li>
                 <li>
-                    <a href="#"><i class="fab fa-twitter icon"></i></a>
+                    <a href="https://github.com/Zharne" target="_blank" class="contact-icon">
+             <!-- <i class="fab fa-github" aria-hidden="true"></i></a> -->
+            <i class="fab fa-github"></i></a> 
                 </li>
                 <li>
-                    <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
-                <li>
-                    <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+                    <a href="https://www.linkedin.com/in/zharné-desember-795b8416b" target="_blank"><i class="fab fa-linkedin-in icon"></i></a></li>
+                <!-- <li>
+                    <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li> -->
             </ul>
         </div>            
-    </div>    
+    </div>  
+</div>      
 </template>
 
 <script>
@@ -159,6 +164,18 @@ ul li:nth-child(4) a:before {
   background: #dd4b39;
 }
 
+/* Media Queries */
+@media screen and (max-width: 800px){
+.container{
+    margin-left: 220px;
+    width: 60%;
+}    
+ul{
+    position: -ms-page;
+    top: 73%;
+    left: 63%;
+}
+}
 /* 
 @keyframes img-box {
   0%,

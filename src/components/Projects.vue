@@ -212,5 +212,21 @@ background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
     inset -4px -4px 6px 0 rgba(255,255,255,.5),
     inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
 }
+@media screen and (max-width: 880px){
+#projects{
+	width: 70%;
+	margin-top: 15rem;
+}
+
+.container{
+	position:-ms-page;
+}	
+}
+@media screen and (max-width: 768px){
+#projects{
+	margin-top: 40rem;
+	width: 60%;
+}	
+}
 
 </style>

@@ -53,9 +53,10 @@ main {
   padding: 0px 10px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
   .sidenav {
     padding-top: 15px;
+    width: 150px;
     background-color: black;
     }
   .sidenav a {font-size: 18px;}

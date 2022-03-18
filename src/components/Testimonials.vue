@@ -1,69 +1,58 @@
 <template>
   <section>
 <div id='testimonials'>
-	<div class="row">
-		<div class="col">
-			<h2>Testimonials</h2>
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<!-- Carousel indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                    <li data-target="#myCarousel" data-slide-to="5"></li>
-				</ol>   
-				<!-- Wrapper for carousel items -->
-				<div class="carousel-inner">
-					<div class="carousel-item active"><br>
-						<div class="img-box"><img src="https://i.postimg.cc/Nfzq0qRB/Alex.jpg" alt=""></div>
-						<p class="testimonial"></p>
-						<p class="overview"><b>Alex Sexwale</b>,Life Choices lecturer</p>
-					</div>
-					<div class="carousel-item">
-						<div class="img-box"><img src="https://i.postimg.cc/Znxr3DNc/Kyle3.jpg" alt=""></div>
-						<p class="testimonial">Zharne is a dedicated,hard-working individual striving for greatness</p>
-						<p class="overview"><b>Kyle McBryne</b>, Colleague at Life Choices</p>
-					</div>
-					<div class="carousel-item">
-						<div class="img-box"><img src="https://i.postimg.cc/XJ8JgM2p/Amaarah3.jpg" alt=""></div>
-						<p class="testimonial">Zharne is a very hard-working individual. She is willing to help others and she is a good team member. Her personality will be a great asset to any work envornment.</p>
-						<p class="overview"><b>Amaarah January</b>, Colleague at Life Choices</p>
-					</div>
-                    <div class="carousel-item">
-						<div class="img-box"><img src="https://i.postimg.cc/NMgGFJgY/Bongani3.jpg" alt=""></div>
-						<p class="testimonial">Vestibulum</p>
-						<p class="overview"><b>Bongani M</b>, Colleague at Life Choices</p>
-					</div>
-                    <div class="carousel-item">
-						<div class="img-box"><img src="https://i.postimg.cc/CLBMx8wd/hannah.jpg" alt=""></div>
-						<p class="testimonial">Zharne is a hardworking team player, any team would be lucky to have her on board.</p>
-						<p class="overview"><b>Hannah Dalwai</b>, Colleague at Life Choices</p>
-					</div>
-                    <div class="carousel-item">
-						<div class="img-box"><img src="https://i.postimg.cc/RFsCtxrZ/pexels-andrea-piacquadio-3892920.jpg" alt=""></div>
-						<p class="testimonial">Vestibulum </p>
-						<p class="overview"><b>Mugammad Breda</b>, Colleague at Life Choices</p>
+	<!-- <div class="container" v-if="testimonials.length">
+		<div v-for = "testimonial in testimonials" :key="testimonial.id" class="testimonials">	
+			<div class="row">
+				<div class="col">
+					<h2>Testimonials</h2>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+						<!-- Carousel indicators -->
+						<!-- <ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+							<li data-target="#myCarousel" data-slide-to="4"></li>
+							<li data-target="#myCarousel" data-slide-to="5"></li>
+						</ol>    -->
+						<!-- Wrapper for carousel items -->
+						<!-- <div class="carousel-inner">
+							<div class="carousel-item active"><br>
+								<div class="img-box"><img src="{{testimonials.img}}" alt=""></div>
+								<p class="testimonial">{{testimonials.details}}</p>
+								<p class="overview"><b>{{testimonials.name}}</b>,{{testimonials.position}}</p>
+							</div>
+						</div> -->
+						<!-- Carousel controls -->
+						<!-- <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
 					</div>
 				</div>
-				<!-- Carousel controls -->
-				<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-					<i class="fa fa-angle-left"></i>
-				</a>
-				<a class="carousel-control-next" href="#myCarousel" data-slide="next">
-					<i class="fa fa-angle-right"></i>
-				</a>
 			</div>
 		</div>
-	</div>
-</div>
+	</div> -->
+</div>	
 </section>
 </template>
 
 <script>
 export default {
-
+	 data() {
+    return {
+      testimonials: []
+    }
+  },
+  mounted() {
+    fetch('https://zharneportfolio.herokuapp.com/testimonials')
+      .then(res => res.json())
+      .then(data => this.testimonials = data)
+      .catch(err => console.log(err.message))
+  }
 }
 </script>
 

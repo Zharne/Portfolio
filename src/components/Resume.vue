@@ -204,13 +204,18 @@
 .main-timeline .timeline:nth-child(4n+4) .timeline-year{
     background-color: #00A8D7;
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:800px){
+  #resume{
+    background-color: whitesmoke;
+    margin-left: 20px;
+  }  
+  }
     .main-timeline .timeline,
     .main-timeline .timeline:nth-child(even){
-        width: 100%;
+        width: 90%;
         margin: 0 0 40px;
     }
-}
+
 @media screen and (max-width:576px){
     .main-timeline .timeline-content,
     .main-timeline .timeline:nth-child(even) .timeline-content{
